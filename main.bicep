@@ -16,7 +16,7 @@ param additionalAppSettings object = {}
 var commonAppSettings = {
   APPINSIGHTS_INSTRUMENTATIONKEY: appInsightsInstrumentationKey
   APPLICATIONINSIGHTS_CONNECTIONSTRING: 'InstrumentationKey=${appInsightsInstrumentationKey}'
-  AzureWebJobStorage: 'DefaultsEndpointsProtocol=https;AccountName=${storageAccountName};AccountKey=${storageAccountAccessKey}'
+  AzureWebJobsStorage: 'DefaultsEndpointsProtocol=https;AccountName=${storageAccountName};AccountKey=${storageAccountAccessKey}'
   FUNCTIONS_EXTENSION_VERSION: '~4'
   FUNCTIONS_WORKER_RUNTIME: 'powershell'
   WEBSITE_CONTENTSHARE: toLower(storageAccountName)
